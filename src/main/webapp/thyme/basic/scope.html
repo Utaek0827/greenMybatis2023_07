@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>scope</title>
+</head>
+<body>
+<h1>scope</h1>
+
+<!-- 버전문제로 사용불가  -->
+<!-- request: <span th:text=${#request}></span> <br /> -->
+<!-- response: <span th:text=${#response}></span> <br /> -->
+<!-- session: <span th:text=${#session}></span> <br /> -->
+<!-- context: <span th:text=${#context}></span> <br /> -->
+locale: <span th:text=${#locale}></span> <br />
+aaa:[[${aaa}]] <br />
+param.aaa:[[${param.aaa}]] <br />
+ph1:[[${ph1}]] <br />
+session.ph1:[[${session.ph1}]] <br />
+session.ph2:[[${session.ph2}]] <br />
+<!-- @ : bean을 가져온다. -->
+@sportCar:[[${@sportCar}]] <br />
+
+</body>
+</html>

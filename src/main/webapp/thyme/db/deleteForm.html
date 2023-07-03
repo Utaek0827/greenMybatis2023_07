@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>삭제폼</title>
+</head>
+<body>
+<h1>삭제폼</h1>
+<form method="post" th:object="${boardDTO}">
+
+	<table border="">
+		<tr>
+			<td>삭제 비밀번호</td>
+			<td><input type="text" th:field="*{pw}"/></td>
+		</tr>
+		
+		<tr>
+			<td colspan="2" align="center">
+				<input type="submit" value="작성"/>
+				<a th:href="|/db/detail/*{id}|" th:text="뒤로"></a>
+			</td>
+		</tr>
+	</table>
+
+</form>
+
+
+</body>
+</html>

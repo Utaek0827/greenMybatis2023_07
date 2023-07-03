@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>loginRes</title>
+</head>
+<body>
+<h1>loginRes</h1>
+<form action="logOut">
+<table border="">
+	<tr>
+		<td>아이디</td>
+		<td th:text="${session.user.pid}">아이디</td>
+	</tr>
+	<tr>
+		<td>이름</td>
+		<td th:text="${session.user.pname}">아이디</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+		<input type="submit" value="로그아웃"/></td>
+	</tr>
+
+</table>
+</form>
+
+
+
+</body>
+</html>
